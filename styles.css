@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    color: rgb(250, 190, 26);
+    background-color: black;
+}
+
+/*Navigation*/
+.navig {
+    background-color: aliceblue;
+    margin: 0px 0px 5px 0px;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.lnk {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+.lnk:hover {
+    color:rgb(250, 190, 26);
+    background-color: black;
+}
+
+/*main*/
+.mainP {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0px 0px 0px;
+    justify-content: center;
+}
+.main_left {
+    padding: 20px 20px 0px 20px;
+}
+.name {
+    font-size: 70px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main_right {
+    align-self: baseline;
+}
+.img1 {
+    width: 550px;
+    height: auto;
+}
+
+/*Education*/
+.edu {
+    background-color: aliceblue;
+    color: black;
+    padding: 70px 0px 0px 0px;
+    display: grid;
+    grid-template-areas: 
+    "edu_top"
+    "edu_but";
+    justify-content: center;
+}
+.edu_top {
+    grid-area: edu_top;
+}
+.h22 {
+    font-size: 50px;
+    margin: 0px;
+}
+.edu_but {
+    grid-area: edu_but;
+    display: flex;
+}
+.edu_left, .edu_right {
+    width: 500px;
+    height: auto;
+    font-size: 30px;
+}
+/* .edu_right {
+    width: 500px;
+    height: auto;
+} */
+
+
+/* Work Experience */
+.work_xp {
+    padding: 100px 0px 0px 0px;
+}
+#container {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+.xp {
+    max-width: 500px;
+    height: auto;
+    /* padding: 20px; */
+    margin: 0px 70px;
+    white-space: normal;
+}
+.ul {
+    max-width: 400px;
+}
