@@ -24,3 +24,33 @@ function sideScroll(element,direction,speed,distance,step){
         }
     }, speed);
 }
+
+
+
+//buttons 2
+var button2 = document.getElementById('butt_for2');
+button2.onclick = function () {
+    var container2 = document.getElementById('container2');
+    sideScroll(container2,'right',50,600,30);
+};
+
+var back2 = document.getElementById('butt_back2');
+back2.onclick = function () {
+    var container2 = document.getElementById('container2');
+    sideScroll(container2,'left',50,600,30);
+};
+
+function sideScroll2(element,direction,speed,distance,step){
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}

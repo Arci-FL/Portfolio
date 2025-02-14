@@ -1,7 +1,11 @@
 body {
     margin: 0px;
-    color: rgb(250, 190, 26);
+    color: rgb(104, 126, 255);
     background-color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.boddy {
+    margin: 0px 100px 0px 100px;
 }
 
 /*Navigation*/
@@ -16,7 +20,6 @@ body {
     position: fixed;
     top: 0;
 }
-
 .lnk {
     text-decoration: none;
     color: black;
@@ -26,7 +29,11 @@ body {
     padding-top: 15px;
 }
 .lnk:hover {
-    color:rgb(250, 190, 26);
+    color:rgb(104, 126, 255);
+    background-color: black;
+}
+.lnk:target{
+    color:rgb(104, 126, 255);
     background-color: black;
 }
 
@@ -36,38 +43,51 @@ body {
     flex-direction: row;
     padding: 100px 0px 0px 0px;
     justify-content: center;
+    background: linear-gradient(45deg,rgb(40, 34, 213,0.4),rgb(92, 0, 128,0.4)), url("images/pattern.png");
+    background-color: black;
+    background-size: contain;
+    color: aliceblue;
 }
 .main_left {
     padding: 20px 20px 0px 20px;
 }
 .name {
     font-size: 70px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 .main_right {
     align-self: baseline;
 }
 .img1 {
-    width: 550px;
+    width: 800px;
     height: auto;
+}
+.p1 {
+    font-size: 20px;
 }
 
 /*Education*/
 .edu {
-    background-color: aliceblue;
-    color: black;
+    background:linear-gradient(45deg,rgba(126, 122, 255, 0.2),rgba(223, 144, 255, 0.2)), url("images/redefiners.jpg");
+    background-size: cover;
+    background-position:center;
+    background-color: black;
+    color: aliceblue;
     padding: 70px 0px 0px 0px;
     display: grid;
     grid-template-areas: 
     "edu_top"
     "edu_but";
     justify-content: center;
+    height: 550px;
+    text-shadow: 3px 3px black;
 }
 .edu_top {
     grid-area: edu_top;
+    
 }
 .h22 {
-    font-size: 50px;
+    font-size: 35px;
     margin: 0px;
 }
 .edu_but {
@@ -86,21 +106,177 @@ body {
 
 
 /* Work Experience */
+#work_exp {
+    background-color: rgb(104, 126, 255);
+    color: white;
+}
 .work_xp {
-    padding: 100px 0px 0px 0px;
+    padding: 200px 0px 0px 0px;
+    background: url("images/nacos.jpg");
+    background-position: center -30px;
+    background-size: cover;
+    color: aliceblue;
+    text-shadow: 3px 3px black;
+}
+.wxp {
+    padding: 40px;
 }
 #container {
     display: flex;
     overflow: auto;
     white-space: nowrap;
+    gap: 30px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+#container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
 }
 .xp {
-    max-width: 500px;
+    min-width: 500px;
     height: auto;
     /* padding: 20px; */
-    margin: 0px 70px;
+    margin: 0px 40px;
+    overflow: hidden;
     white-space: normal;
 }
 .ul {
     max-width: 400px;
+}
+.butt1 {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+.butt1:hover {
+    background-color: aliceblue;
+    color: black;
+}
+.b2 {
+    position: relative;
+    right: 10px;
+}
+.h33 {
+    font-size: 20px;
+    margin: 0px;
+}
+.h44 {
+    font-size: 15px;
+    margin: 0px;
+    font-style: oblique;
+}
+
+
+/* Technical Skills */
+.img2 {
+    width: 30px;
+    height: auto;
+}
+.techSkills {
+    background-color: aliceblue;
+    color: black;
+    padding: 70px 20px 40px 20px;
+    align-self: center;
+    
+}
+.techS {
+    display: grid;
+    grid-template-areas: 
+    "t1 t2 t3 t4"
+    "t5 t6 t7 t8";
+}
+.t1 {
+    grid-area: t1;
+    padding: 10px;
+}
+.t2 {
+    grid-area: t2;
+    padding: 10px;
+}
+.t3 {
+    grid-area: t3;
+    padding: 10px;
+}
+.t4 {
+    grid-area: t4;
+    padding: 10px;
+}
+.t5 {
+    grid-area: t5;
+    padding: 10px;
+}
+.t6 {
+    grid-area: t6;
+    padding: 10px;
+}
+.t7 {
+    grid-area: t7;
+    padding: 10px;
+}
+.t8 {
+    grid-area: t8;
+    padding: 10px;
+}
+.h332 {
+    font-size: 18px;
+    margin: 0px;
+}
+
+
+/* Leadership */
+.leadCS {
+    background-color: rgb(104, 126, 255);
+    color: white;
+    text-shadow: 3px 3px black;
+    padding: 30px;
+}
+#container2 {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    gap: 5px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+#container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+.butt2 {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+.butt2:hover {
+    background-color: aliceblue;
+    color: black;
+}
+.ld1 {
+    background-image: url("images/nacos2.jpg");
+    background-size: cover;
+}
+.ld2 {
+    background-image: url("images/committee.jpg");
+    background-size: cover;
+}
+.ld3 {
+    background-image: url("images/chess.jpg");
+    background-size: cover;
+}
+.ld4 {
+    background-image: url("images/volleybal.jpg");
+    background-size: cover;
+}
+.ld5 {
+    background-image: url("images/nfcs.jpg");
+    background-size: cover;
 }
