@@ -4,28 +4,36 @@
         <title>Home</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body class="abody">
         <!-- Navigation -->
         <div class="navig">
+            <div class="butt">
+                <button id="butt_back" class="butt2 b1">&#60;</button>
+                <button id="butt_for" class="butt2 b2">&#62;</button>
+            </div>
             <a class="lnk" href="#mainPa">Home</a>
             <a class="lnk" href="#educ">Education</a>
-            <a class="lnk" href="#work_exp">Work Experience</a>
+            <a class="lnk" href="#work_exp">Work Experience & <br>Leadership and Community Involvement</a>
             <a class="lnk" href="#tech_">Technical Skills</a>
-            <a class="lnk" href="#leadd">Leadership and Community Involvement</a>
         </div>
-        <div class="boddy">
+
+        <!-- THE BODY -->
+        <div id="boddy" class="boddy">            
+            
 
             <!-- MAIN -->
             <div id="mainPa" class="mainP">
+                <div class="main_right">
+                    <img class="img1" src="images/pfp5.png">
+                </div>
+
                 <div class="main_left">
-                    <h1>I'm <span class="name">Frederick Atigogo</span>,<br> a developer.</h1>
+                    <h1>I'm <span class="name">Frederick Atigogo</span>, a developer.</h1>
                     <p class="p1">Final-year Computer Science student with hands-on experience in AI, web development, and software engineering.
                         Proficient in Python, React, and ASP.NET, with a track record of building functional applications and leading development teams.
                         Seeking an entry-level role to apply my technical expertise in real-world projects.</p>
                 </div>
-                <div class="main_right">
-                    <img class="img1" src="images/pfp5.png">
-                </div>
+                
             </div>
 
             <!-- EDUCATION -->
@@ -33,69 +41,118 @@
                 <div class="edu_top">
                     <h2 class="h22">Education</h2>
                 </div>
-                <div class="edu_but">
-                    <div class="edu_left">
-                        <p><span>Bachelor of Science in Computer Science</span>
-                            Dominican University, Ibadan, Oyo State, Nigeria.
-                            (Expected Graduation: Aug 2025)</p>
+                <div class="edu_img">
+                    <div class="edu_but">
+                        <div class="edu_left">
+                            <p><span>Bachelor of Science in Computer Science</span>
+                                Dominican University, Ibadan, Oyo State, Nigeria.
+                                (Expected Graduation: Aug 2025)</p>
+                        </div>
+                        <div class="edu_right">
+                            <p><span>Relevant Coursework:</span>
+                                Data Structures and Algorithms, Artificial Intelligence, Operating Systems, Software Engineering, Database System Implementation, System Analysis and Design, Neural Networks. AI Programming, Robotics, Human Computer Interaction.</p>
+                        </div>
                     </div>
-                    <div class="edu_right">
-                        <p><span>Relevant Coursework:</span>
-                            Data Structures and Algorithms, Artificial Intelligence, Operating Systems, Software Engineering, Database System Implementation, System Analysis and Design, Neural Networks. AI Programming, Robotics, Human Computer Interaction.</p>
-                    </div>
+                    <img class="img_edu img_edu1" src="images/nacos.jpg">
+                    <img class="img_edu img_edu2" src="images/chess.jpg">
+                    <img class="img_edu img_edu3" src="images/nacos2.jpg">
                 </div>
             </div>
 
             <!-- WORK EXPERIENCE -->
-            <div id="work_exp" class="">
-                <div class="work_xp">
-                    <h2 class="h22 wxp">Work Experience</h2>
+            <div id="work_exp" class="work_expp">
+                <div>
+                    <div class="work_xp">
+                        <h2 class="h22 wxp">Work Experience</h2>
+                    </div>
+                    <div id="container">
+                        <div class="xp">
+                            <h3 class="h33">Graphic Designer, Digital Experience Team &#40;Volunteer&#41;</h3>
+                            <h4 class="h44">Recruitment Organization Committee, AIESEC in Ibadan, Nigeria &#124; Dec 2024 to February 2025</h4>
+                            <ul>
+                                <li>Designed intuitive marketing materials using Figma and Canva to engage new recruits.</li>
+                                <li>Ensured brand consistency and adherence to organizational guidelines.</li>
+                            </ul>
+                        </div>
+                        <div class="xp">
+                            <h3 class="h33">Developer Team Lead &#40;Volunteer&#41;</h3>
+                            <h4 class="h44">Talent Tribe Community, Ibadan, Oyo, Nigeria &#124; Nov 2024 to Present</h4>
+                            <ul class="ul1">
+                                <li>Developed a functional and interactive web application using React.js (frontend) and Python (backend).</li>
+                                <li>Provided leadership and collaborated with experienced developers to ensure smooth development cycles.</li>
+                                <li>Documented application progress and coordinated with other department heads.</li>
+                            </ul>
+                        </div>
+                        <div class="xp">
+                            <h3 class="h33">Intern IT Support&#47;Engineer</h3>
+                            <h4 class="h44">Polaris Bank Ltd, Victoria Island, Lagos, Nigeria &#124; Jul 2024 to 2024</h4>
+                            <ul>
+                                <li>Gained proficiency in system configuration, troubleshooting, and hardware/software support.</li>
+                                <li>Assisted in network diagnostics and issue resolution.</li>
+                                <li>Enhanced collaboration and teamwork skills by working closely with fellow interns.</li>
+                            </ul>
+                        </div>
+                        <div class="xp">
+                            <h3 class="h33">Intern Software Developer</h3>
+                            <h4 class="h44">Sidmach Technologies Ltd, Alausa, Lagos, Nigeria &#124; Jli 2023 to Sep 2023</h4>
+                            <ul>
+                                <li>Mastered development of comprehensive web solutions through hands-on experience with the ASP.NET C# framework while accompanied closely as the most junior member on complex software engineering tasks within an agile environment.</li>
+                                <li>Developed a functional E-commerce Website with the practical skills and knowledge attained from the experience.</li>
+                            </ul>
+                        </div>
+                        <div class="xp">
+                            <h3 class="h33">Teaching Assistant &#40;Online Coding Class&#41;</h3>
+                            <h4 class="h44">Recruitment Organization Committee, AIESEC in Ibadan, Nigeria &#124; Dec 2024 to Present</h4>
+                            <ul>
+                                <li>Taught Python fundamentals to mlitiple young students, improving their understanding and coding skills.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="butt">
-                    <button id="butt_back" class="butt1 b1" type="button">&#60;</button>
-                    <button id="butt_for" class="butt1 b2" type="button">&#62;</button>
-                </div>
-                <div id="container">
-                    <div class="xp">
-                        <h3 class="h33">Graphic Designer, Digital Experience Team &#40;Volunteer&#41;</h3>
-                        <h4 class="h44">Recruitment Organization Committee, AIESEC in Ibadan, Nigeria &#124; Dec 2024 - Present</h4>
-                        <ul>
-                            <li>Designed intuitive marketing materials using Figma and Canva to engage new recruits.</li>
-                            <li>Ensured brand consistency and adherence to organizational guidelines.</li>
-                        </ul>
+
+                <!-- LEADERSHIP -->
+                <!-- id="leadd" class="leadCS" -->
+                <div>
+                    <div>
+                        <h2 class="ldd">Leadership and Community Involvement</h2>
                     </div>
-                    <div class="xp">
-                        <h3 class="h33">Developer Team Lead & Frontend Developer &#40;Volunteer&#41;</h3>
-                        <h4 class="h44">Talent Tribe Community, Ibadan, Oyo, Nigeria &#124; Nov 2024 to Present</h4>
-                        <ul class="ul1">
-                            <li>Developed a functional and interactive web application using React.js (frontend) and Python (backend).</li>
-                            <li>Provided leadership and collaborated with experienced developers to ensure smooth development cycles.</li>
-                            <li>Documented application progress and coordinated with other department heads.</li>
-                        </ul>
-                    </div>
-                    <div class="xp">
-                        <h3 class="h33">Intern IT Support&#47;Engineer</h3>
-                        <h4 class="h44">Polaris Bank Ltd, Victoria Island, Lagos, Nigeria &#124; Jul 2024 to 2024</h4>
-                        <ul>
-                            <li>Gained proficiency in system configuration, troubleshooting, and hardware/software support.</li>
-                            <li>Assisted in network diagnostics and issue resolution.</li>
-                            <li>Enhanced collaboration and teamwork skills by working closely with fellow interns.</li>
-                        </ul>
-                    </div>
-                    <div class="xp">
-                        <h3 class="h33">Intern Software Developer</h3>
-                        <h4 class="h44">Sidmach Technologies Ltd, Alausa, Lagos, Nigeria &#124; Jli 2023 to Sep 2023</h4>
-                        <ul>
-                            <li>Mastered development of comprehensive web solutions through hands-on experience with the ASP.NET C# framework while accompanied closely as the most junior member on complex software engineering tasks within an agile environment.</li>
-                            <li>Developed a functional E-commerce Website with the practical skills and knowledge attained from the experience.</li>
-                        </ul>
-                    </div>
-                    <div class="xp">
-                        <h3 class="h33">Teaching Assistant &#40;Online Coding Class&#41;</h3>
-                        <h4 class="h44">Recruitment Organization Committee, AIESEC in Ibadan, Nigeria &#124; Dec 2024 to Present</h4>
-                        <ul>
-                            <li>Taught Python fundamentals to mlitiple young students, improving their understanding and coding skills.</li>
-                        </ul>
+                    <div id="container">
+                        <div class="xp ld1">
+                            <h3 class="h33">President, National Association of Computing Students &#40;NACOS&#41;, Dominican University</h3>
+                            <h4 class="h44">Jun 2023 to Present</h4>
+                            <ul>
+                                <li>Organized clubs and workshops to enhance student interest in areas of technology.</li>
+                                <li>Spearheaded initiatives to increase student engagement in tech-related activities.</li>
+                            </ul>
+                        </div>
+                        <div class="xp ld2">
+                            <h3 class="h33">Chairperson, Intellectual Committee, Dominican University</h3>
+                            <h4 class="h44">Oct 2023 to Present</h4>
+                            <ul>
+                                <li>Led a team to implement academic improvement programs, benefiting 200+ students.</li>
+                            </ul>
+                        </div>
+                        <div class="xp ld3">
+                            <h3 class="h33">Captain, Dominican University Chess Club</h3>
+                            <h4 class="h44">Mar 2023 to Present</h4>
+                            <ul>
+                                <li>Organized training sessions and competitions to promote critical thinking skills.</li>
+                            </ul>
+                        </div>
+                        <div class="xp ld4">
+                            <h3 class="h33">Vice-Captain, Dominican University Girls Volleyball Team</h3>
+                            <h4 class="h44">Nov 2023 to Present</h4>
+                            <ul>
+                                <li>Coordinated training schedules and team-building exercises.</li>
+                            </ul>
+                        </div>
+                        <div class="xp ld5">
+                            <h3 class="h33">Vice President, Nigerian Federation of Catholic Students, Dominican University Chapter</h3>
+                            <h4 class="h44">Jun 2022 to Jun 2023</h4>
+                            <ul>
+                                <li>Facilitated student engagement and community-building activities.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,55 +225,9 @@
                 </div>
             </div>
 
-            <!-- LEADERSHIP -->
-            <div id="leadd" class="leadCS">
-                <div>
-                    <h2 class="h22">Leadership and Community Involvement</h2>
-                </div>
-                <div class="butt">
-                    <button id="butt_back2" class="butt2 b1">&#60;</button>
-                    <button id="butt_for2" class="butt2 b2">&#62;</button>
-                </div>
-                <div id="container2">
-                    <div class="xp ld1">
-                        <h3 class="h33">President, National Association of Computing Students &#40;NACOS&#41;, Dominican University</h3>
-                        <h4 class="h44">Jun 2023 to Present</h4>
-                        <ul>
-                            <li>Organized clubs and workshops to enhance student interest in areas of technology.</li>
-                            <li>Spearheaded initiatives to increase student engagement in tech-related activities.</li>
-                        </ul>
-                    </div>
-                    <div class="xp ld2">
-                        <h3 class="h33">Chairperson, Intellectual Committee, Dominican University</h3>
-                        <h4 class="h44">Oct 2023 to Present</h4>
-                        <ul>
-                            <li>Led a team to implement academic improvement programs, benefiting 200+ students.</li>
-                        </ul>
-                    </div>
-                    <div class="xp ld3">
-                        <h3 class="h33">Captain, Dominican University Chess Club</h3>
-                        <h4 class="h44">Mar 2023 to Present</h4>
-                        <ul>
-                            <li>Organized training sessions and competitions to promote critical thinking skills.</li>
-                        </ul>
-                    </div>
-                    <div class="xp ld4">
-                        <h3 class="h33">Vice-Captain, Dominican University Girls Volleyball Team</h3>
-                        <h4 class="h44">Nov 2023 to Present</h4>
-                        <ul>
-                            <li>Coordinated training schedules and team-building exercises.</li>
-                        </ul>
-                    </div>
-                    <div class="xp ld5">
-                        <h3 class="h33">Vice President, Nigerian Federation of Catholic Students, Dominican University Chapter</h3>
-                        <h4 class="h44">Jun 2022 to Jun 2023</h4>
-                        <ul>
-                            <li>Facilitated student engagement and community-building activities.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
         </div>
+        
         <script src="script.js"></script>
     </body>
 </html>

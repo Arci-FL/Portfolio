@@ -1,32 +1,51 @@
 body {
     margin: 0px;
     color: rgb(104, 126, 255);
-    background-color: black;
+    background-color:rgb(34, 24, 33);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100dvh;
 }
+.abody {
+    display: flex;
+    flex-direction: row;
+}
+
 .boddy {
-    margin: 0px 100px 0px 100px;
+    display: flex;
+    flex-direction: row;
 }
+#boddy {
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}  
+#boddy::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari and Opera */
+} 
 
 /*Navigation*/
 .navig {
-    background-color: aliceblue;
-    margin: 0px 0px 5px 0px;
-    height: 70px;
-    width: 100%;
+    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
+    background-color: rgb(162, 208, 249);
+    border: 3px solid rgb(34, 24, 33);
+    border-radius: 30px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    position: fixed;
+    position:fixed;
+    z-index: 1;
     top: 0;
+    left: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 200px;
 }
 .lnk {
     text-decoration: none;
-    color: black;
+    color: rgb(108, 24, 67);
     font-size: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
+    padding: 10px;
 }
 .lnk:hover {
     color:rgb(104, 126, 255);
@@ -37,67 +56,119 @@ body {
     background-color: black;
 }
 
+.boddy {
+    margin-left: 220px;
+}
 /*main*/
 .mainP {
-    display: flex;
-    flex-direction: row;
-    padding: 100px 0px 0px 0px;
-    justify-content: center;
-    background: linear-gradient(45deg,rgb(40, 34, 213,0.4),rgb(92, 0, 128,0.4)), url("images/pattern.png");
-    background-color: black;
-    background-size: contain;
-    color: aliceblue;
+    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
+    background-color: rgb(162, 208, 249);
+    display: grid;
+    border-radius: 30px;
+    border: 3px solid rgb(34, 24, 33);
+    color: rgb(34, 24, 33);
+    height: 100dvh;
+    max-width: 100dvw;
 }
 .main_left {
-    padding: 20px 20px 0px 20px;
+    justify-self: center;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgba(77, 112, 250, 0.503), rgba(207, 77, 250, 0.503));
+    width: 600px;
 }
 .name {
     font-size: 70px;
     font-weight: bold;
 }
 .main_right {
-    align-self: baseline;
+    justify-self: center;
+    align-self:center;
 }
 .img1 {
-    width: 800px;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+h1 {
+    text-align: center;
 }
 .p1 {
     font-size: 20px;
+    text-align: center;
+    min-width: 200px;
 }
 
 /*Education*/
 .edu {
-    background:linear-gradient(45deg,rgba(126, 122, 255, 0.2),rgba(223, 144, 255, 0.2)), url("images/redefiners.jpg");
-    background-size: cover;
-    background-position:center;
-    background-color: black;
-    color: aliceblue;
-    padding: 70px 0px 0px 0px;
+    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
+    background-color: rgb(162, 208, 249);
+    border-radius: 30px;
+    border: 3px solid rgb(34, 24, 33);
+    height: 100dvh;
+    max-width: 100dvw;
+    color: rgb(34, 24, 33);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+    margin: 0;
+}
+.edu_img {
     display: grid;
     grid-template-areas: 
-    "edu_top"
-    "edu_but";
-    justify-content: center;
-    height: 550px;
-    text-shadow: 3px 3px black;
-}
-.edu_top {
-    grid-area: edu_top;
-    
+        "edu_but edu_but edu_but"
+        "img_edu1 img_edu2 img_edu3";
+    justify-content:flex-start;
+    row-gap: 3px;
+    column-gap: 3px;
+
 }
 .h22 {
-    font-size: 35px;
+    font-size: 30px;
     margin: 0px;
+    text-align: center;
+    margin-top: 10px;
 }
 .edu_but {
     grid-area: edu_but;
     display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background: linear-gradient(45deg, rgba(77, 112, 250, 0.503), rgba(207, 77, 250, 0.503));
+    border-radius: 20px;
+    margin: 15px 0px;
 }
-.edu_left, .edu_right {
+.edu_left {
     width: 500px;
     height: auto;
-    font-size: 30px;
+    font-size: 19px;
+    text-align: center;
+}
+.edu_right {
+    width: 500px;
+    height: auto;
+    font-size: 19px;
+    text-align: center;
+}
+.img_edu {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.img_edu1 {
+    grid-area: img_edu1;
+    justify-self: center;
+}
+.img_edu2 {
+    grid-area: img_edu2;
+    justify-self: center;
+}
+.img_edu3 {
+    grid-area: img_edu3;
+    justify-self: center;
 }
 /* .edu_right {
     width: 500px;
@@ -107,66 +178,50 @@ body {
 
 /* Work Experience */
 #work_exp {
-    background-color: rgb(104, 126, 255);
-    color: white;
-}
-.work_xp {
-    padding: 200px 0px 0px 0px;
-    background: url("images/nacos.jpg");
-    background-position: center -30px;
-    background-size: cover;
-    color: aliceblue;
-    text-shadow: 3px 3px black;
-}
-.wxp {
-    padding: 40px;
+    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
+    background-color: rgb(162, 208, 249);
+    border-radius: 30px;
+    border: 3px solid rgb(34, 24, 33);
+    height: 100dvh;
+    width: 100dvw;
+    color: rgb(34, 24, 33);
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
 }
 #container {
     display: flex;
+    flex-flow: column wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 10px 0px;
+    justify-content: center;
+    width: auto;
+    height: 300px;
     overflow: auto;
-    white-space: nowrap;
-    gap: 30px;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-}
-#container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+    scrollbar-color: rgb(207, 77, 250);
 }
 .xp {
-    min-width: 500px;
+    width: 300px;
     height: auto;
-    /* padding: 20px; */
-    margin: 0px 40px;
-    overflow: hidden;
-    white-space: normal;
+    background: linear-gradient(45deg, rgba(77, 112, 250, 0.503), rgba(207, 77, 250, 0.503));
+    background-color: rgba(207, 77, 250, 0.503);
+    padding: 20px;
+    border-radius: 20px;
 }
-.ul {
-    max-width: 400px;
-}
-.butt1 {
-    background-color: transparent;
-    border: none;
-    color: aliceblue;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-}
-.butt1:hover {
-    background-color: aliceblue;
-    color: black;
+li {
+    font-size: 13px;
 }
 .b2 {
     position: relative;
     right: 10px;
 }
 .h33 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0px;
 }
 .h44 {
-    font-size: 15px;
+    font-size: 13px;
     margin: 0px;
     font-style: oblique;
 }
@@ -178,9 +233,13 @@ body {
     height: auto;
 }
 .techSkills {
-    background-color: aliceblue;
-    color: black;
-    padding: 70px 20px 40px 20px;
+    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
+    background-color: rgb(162, 208, 249);
+    border-radius: 30px;
+    border: 3px solid rgb(34, 24, 33);
+    height: 100dvh;
+    max-width: 100dvw;
+    color: rgb(34, 24, 33);
     align-self: center;
     
 }
@@ -230,21 +289,20 @@ body {
 
 /* Leadership */
 .leadCS {
-    background-color: rgb(104, 126, 255);
-    color: white;
-    text-shadow: 3px 3px black;
+    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
+    background-color: rgb(162, 208, 249);
+    border-radius: 30px;
+    border: 3px solid rgb(34, 24, 33);
+    height: 100dvh;
+    width: 100dvw;
+    color: rgb(34, 24, 33);
     padding: 30px;
 }
-#container2 {
-    display: flex;
-    overflow: auto;
-    white-space: nowrap;
-    gap: 5px;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-}
-#container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+.ldd {
+    margin: 0px;
+    text-align: center;
+    font-size: 27;
+    margin-top: 10px;
 }
 .butt2 {
     background-color: transparent;
@@ -259,24 +317,4 @@ body {
 .butt2:hover {
     background-color: aliceblue;
     color: black;
-}
-.ld1 {
-    background-image: url("images/nacos2.jpg");
-    background-size: cover;
-}
-.ld2 {
-    background-image: url("images/committee.jpg");
-    background-size: cover;
-}
-.ld3 {
-    background-image: url("images/chess.jpg");
-    background-size: cover;
-}
-.ld4 {
-    background-image: url("images/volleybal.jpg");
-    background-size: cover;
-}
-.ld5 {
-    background-image: url("images/nfcs.jpg");
-    background-size: cover;
 }
