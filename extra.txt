@@ -1,0 +1,66 @@
+ <div id="tech_" class="techSkills">
+                <div>
+                    <h2 class="h22">Technical Skills</h2>
+                </div>
+                <div class="techS">
+                    <div class="techSk t1">
+                        <h3 class="h332">Programming Languages</h3>
+                        <!-- <p></p> -->
+                        <img class="img2" src="icons/c_sharp.png">
+                        <img class="img2" src="icons/pythonn.png">
+                        <img class="img2" src="icons/cpp.png">
+                        <img class="img2" src="icons/javaScript.png">
+                        <img class="img2" src="icons/dart.png">
+                    </div>
+                    <div class="techSk t2">
+                        <h3 class="h332">AI&#47;ML &#38; Data science</h3>
+                        <!-- <p>PyTorch, Pandas, NumPy, Jupyter Notebook</p> -->
+                        <img class="img2" src="icons/PyTorch.png">
+                        <img class="img2" src="icons/Pandas.png">
+                        <img class="img2" src="icons/NumPy.png">
+                        <img class="img2" src="icons/Jupyter.png">
+                    </div>
+                    <div class="techSk t3">
+                        <h3 class="h332">Mobile Development</h3>
+                        <!-- <p>Flutter (Beginner), .NET MAUI (Beginner), React Native (Beginner)</p> -->
+                        <img class="img2" src="icons/Flutter.png">
+                        <img class="img2" src="icons/dart.png">
+                        <img class="img2" src="icons/React.png">
+                    </div>
+                    <div class="techSk t4">
+                        <h3 class="h332">Web Development</h3>
+                        <!-- <p>HTML& CSS (Intermediate), React.js (Beginner), ASP.NET Core (Intermediate)</p> -->
+                        <img class="img2" src="icons/HTML5.png">
+                        <img class="img2" src="icons/CSS3.png">
+                        <img class="img2" src="icons/javaScript.png">
+                        <img class="img2" src="icons/React.png">
+                        <img class="img2" src="icons/NET core.png">
+                    </div>
+                    <div class="techSk t5">
+                        <h3 class="h332">Design and Editing</h3>
+                        <!-- <p>Figma, Canva, Photoshop, Video Editing.</p> -->
+                        <img class="img2" src="icons/Figma.png">
+                        <img class="img2" src="icons/Canva.png">
+                        <img class="img2" src="icons/Adobe Photoshop.png">
+                    </div>
+                    <div class="techSk t6">
+                        <h3 class="h332">Database Management</h3>
+                        <!-- <p>SQL, MySQL, SQL Server</p> -->
+                        <img class="img2" src="icons/MySQL.png">
+                        <img class="img2" src="icons/Microsoft SQL Server.png">
+                    </div>
+                    <div class="techSk t7">
+                        <h3 class="h332">Tools &#38; Platforms</h3>
+                        <!-- <p>Git, VS Code, Visual Studio, PowerBI, Jupyter Notebook</p> -->
+                        <img class="img2" src="icons/Git.png">
+                        <img class="img2" src="icons/GitHub.png">
+                        <img class="img2" src="icons/Visual Studio Code (VS Code).png">
+                        <img class="img2" src="icons/Visual Studio.png">
+                        <img class="img2" src="icons/Jupyter.png">
+                    </div>
+                    <div class="techSk t8">
+                        <h3 class="h332">Other Skills</h3>
+                        <p class="p1">Troubleshooting, Project Management.</p>
+                    </div>
+                </div>
+            </div>
