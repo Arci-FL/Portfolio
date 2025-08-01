@@ -7,173 +7,174 @@ body {
 }
 .abody {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .boddy {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-top: 90px;
 }
-#boddy {
+/* #boddy {
     overflow-x: auto;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;     /* Firefox */
-}  
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 #boddy::-webkit-scrollbar {
-    display: none;             /* Chrome, Safari and Opera */
-} 
+    display: none;
+}  */
 
 /*Navigation*/
 .navig {
-    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
-    background-color: rgb(162, 208, 249);
-    border: 3px solid rgb(34, 24, 33);
-    border-radius: 30px;
+    background: linear-gradient( 90deg, #28464B, #2C8C99, #42D9C8);
     text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position:fixed;
-    z-index: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
     top: 0;
-    left: 0;
-    overflow-x: hidden;
-    height: 100%;
-    width: 200px;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    align-content: center;
+    z-index: 10;
+    box-shadow: black -1px 1px 3px;
+}
+.lnk1{
+    border: #931621 solid 5px;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 30px;
+    box-shadow: white -1px 1px;
+}
+.lnk2 {
+    text-decoration: none;
+    color: #931621;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bolder;
+    text-shadow: white -1px 1px;
+}
+.lnk3{
+    right: 30px;
+    justify-content: space-around;
+    align-content: center;
 }
 .lnk {
     text-decoration: none;
-    color: rgb(108, 24, 67);
+    color: white;
     font-size: 25px;
     padding: 10px;
 }
 .lnk:hover {
-    color:rgb(104, 126, 255);
+    color:#931621;
     background-color: black;
 }
 .lnk:target{
-    color:rgb(104, 126, 255);
+    color:#931621;
     background-color: black;
 }
 
-.boddy {
-    margin-left: 220px;
-}
+
 /*main*/
 .mainP {
-    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
-    background-color: rgb(162, 208, 249);
-    display: grid;
-    border-radius: 30px;
-    border: 3px solid rgb(34, 24, 33);
-    color: rgb(34, 24, 33);
-    height: 100dvh;
-    max-width: 100dvw;
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #42D9C8;
+    width: 100%;
+    justify-content: space-around;
+    padding: 110px 0px 100px 0px;
 }
 .main_left {
     justify-self: center;
-    padding: 10px 20px 10px 20px;
-    margin: 0px 10px 10px 10px;
-    border-radius: 30px;
-    background: linear-gradient(45deg, rgba(77, 112, 250, 0.503), rgba(207, 77, 250, 0.503));
-    width: 600px;
+    padding: 10px 20px;
+    max-width: 600px;
 }
 .name {
-    font-size: 70px;
+    color: white;
+    font-size: 85px;
     font-weight: bold;
+    text-shadow: #931621 -2px 2px;
 }
 .main_right {
-    justify-self: center;
-    align-self:center;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 100%;
+    border: #931621 5px solid;
+    box-shadow: white -2px 2px;
+    justify-content: center;
+    align-content:center;
+    width: 450px;
+    height: 450px;
 }
 .img1 {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    background-color: #931621;
     object-fit: cover;
     border-radius: 100%;
+    box-shadow: white -2px 2px;
 }
 h1 {
-    text-align: center;
+    text-align: left;
+    font-size: 50px;
+    text-shadow: #28464B -2px 2px;
 }
 .p1 {
-    font-size: 20px;
-    text-align: center;
-    min-width: 200px;
+    font-size: 17px;
+    text-align: left;
+    text-shadow: #28464B -2px 2px;
 }
 
-/*Education*/
-.edu {
-    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
-    background-color: rgb(162, 208, 249);
-    border-radius: 30px;
-    border: 3px solid rgb(34, 24, 33);
-    height: 100dvh;
-    max-width: 100dvw;
-    color: rgb(34, 24, 33);
+/*Personal Information*/
+.persInfo {
+    background: linear-gradient( 90deg, #28464B, #2C8C99, #42D9C8);
     display: flex;
-    flex-direction: column;
-    padding: 0px 30px 0px 30px;
-    margin: 0;
+    flex-direction: row-reverse;
+    color: white;
+    width: 100%;
+    justify-content: space-around;
+    padding: 110px 0px 100px 0px;
 }
-.edu_img {
-    display: grid;
-    grid-template-areas: 
-        "edu_but edu_but edu_but"
-        "img_edu1 img_edu2 img_edu3";
-    justify-content:flex-start;
-    row-gap: 3px;
-    column-gap: 3px;
-
-}
-.h22 {
-    font-size: 30px;
-    margin: 0px;
-    text-align: center;
-    margin-top: 10px;
-}
-.edu_but {
-    grid-area: edu_but;
-    display: flex;
-    flex-direction: column;
+.persText {
     justify-self: center;
-    background: linear-gradient(45deg, rgba(77, 112, 250, 0.503), rgba(207, 77, 250, 0.503));
-    border-radius: 20px;
-    margin: 15px 0px;
+    padding: 10px 20px;
+    max-width: 600px;
 }
-.edu_left {
-    width: 500px;
-    height: auto;
-    font-size: 19px;
-    text-align: center;
+.persImg {
+    display: flex;
+    flex-wrap: wrap;
+    border: #931621 5px solid;
+    box-shadow: white -2px 2px;
+    justify-content: center;
+    align-content:center;
+    width: 400px;
+    height: 400px;
+    transform: rotate(45deg);
+    position: relative; /* or absolute/fixed */
+    z-index: 1;
 }
-.edu_right {
-    width: 500px;
-    height: auto;
-    font-size: 19px;
-    text-align: center;
+.imgPers {
+    width: 300px;
+    height: 300px;
+    background-color: #931621;
+    position: relative; /* or absolute/fixed */
+    z-index: 5;
+    object-fit: cover;
+    box-shadow: white -2px 2px;
+    overflow: hidden;
 }
-.img_edu {
-    width: 250px;
-    height: 250px;
-    border-radius: 30px;
+.imgPers2 {
+    width: 350px;
+    height: 350px;
+    transform: rotate(-45deg);
+    position: relative; /* or absolute/fixed */
+    z-index: 1;
     object-fit: cover;
 }
-.img_edu1 {
-    grid-area: img_edu1;
-    justify-self: center;
-}
-.img_edu2 {
-    grid-area: img_edu2;
-    justify-self: center;
-}
-.img_edu3 {
-    grid-area: img_edu3;
-    justify-self: center;
-}
-/* .edu_right {
-    width: 500px;
-    height: auto;
-} */
+
 
 
 /* Work Experience */
@@ -241,11 +242,11 @@ li {
     max-width: 100dvw;
     color: rgb(34, 24, 33);
     align-self: center;
-    
+
 }
 .techS {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "t1 t2 t3 t4"
     "t5 t6 t7 t8";
 }
