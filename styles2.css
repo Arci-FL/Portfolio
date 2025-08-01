@@ -55,8 +55,7 @@
     color: #42D9C8;
     display: flex;
     flex-direction: column;
-    padding: 0px 30px 0px 30px;
-    margin: 0;
+    padding: 110px 10px 100px 10px;
 }
 .edu_img {
     display: grid;
@@ -69,9 +68,8 @@
 
 }
 .h22 {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0px;
-    text-align: center;
     margin-top: 10px;
 }
 .edu_but {

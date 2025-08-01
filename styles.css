@@ -1,6 +1,5 @@
 body {
     margin: 0px;
-    color: rgb(104, 126, 255);
     background-color:rgb(34, 24, 33);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100dvh;
@@ -70,6 +69,7 @@ body {
 .lnk:hover {
     color:#931621;
     background-color: black;
+    text-shadow: white -1px 1px;
 }
 .lnk:target{
     color:#931621;
@@ -174,19 +174,79 @@ h1 {
     z-index: 1;
     object-fit: cover;
 }
+.lnk4 {
+    text-decoration: none;
+    color: white;
+}
+.lnk4:hover {
+    text-decoration: underline;
+    color: white;
+}
+.p2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
 
+
+/*Projects*/
+.pros {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    padding: 110px 0px 100px 0px;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.prs {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    background: linear-gradient( 90deg, #28464B, #2C8C99, #42D9C8);
+    padding: 10px;
+    max-height: 400px;
+    overflow: auto;
+}
+.img3 {
+    width: 300px;
+    height: auto;
+}.lnk5 {
+    text-decoration: underline;
+    color: white;
+}
+.prmini {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: white 5px solid;
+}
+.h3s {
+    color: #931621;
+    text-shadow: white -1px 1px;
+}
+.h2s {
+    font-size: 40px;
+    text-shadow: #931621 -2px 2px;
+}
+.p3 {
+    font-style: italic;
+    font-size: 17px;
+}
 
 
 /* Work Experience */
 #work_exp {
-    background: linear-gradient(rgb(162, 229, 249), rgb(181, 162, 249));
-    background-color: rgb(162, 208, 249);
-    border-radius: 30px;
-    border: 3px solid rgb(34, 24, 33);
-    height: 100dvh;
-    width: 100dvw;
-    color: rgb(34, 24, 33);
-    padding: 0px 20px;
+    background: linear-gradient( 90deg, #28464B, #2C8C99, #42D9C8);
+    width: 100%;
+    color: white;
+    padding: 110px 10px;
     display: flex;
     flex-direction: column;
 }
@@ -195,20 +255,18 @@ h1 {
     flex-flow: column wrap;
     row-gap: 10px;
     column-gap: 10px;
-    margin: 10px 0px;
+    margin: 20px 0px 20px 0px;
     justify-content: center;
     width: auto;
     height: 300px;
     overflow: auto;
-    scrollbar-color: rgb(207, 77, 250);
 }
 .xp {
     width: 300px;
-    height: auto;
-    background: linear-gradient(45deg, rgba(77, 112, 250, 0.503), rgba(207, 77, 250, 0.503));
-    background-color: rgba(207, 77, 250, 0.503);
+    height: 500px;
+    color: white;
+    background-color: #931621;
     padding: 20px;
-    border-radius: 20px;
 }
 li {
     font-size: 13px;
