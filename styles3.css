@@ -57,5 +57,7 @@
         width: 100px;
         height: auto;
         text-align: center;
+    }.projects {
+        flex-direction: column;
     }
   }

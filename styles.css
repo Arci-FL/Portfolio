@@ -203,13 +203,13 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 110px 0px 100px 0px;
+    padding: 50px 0px 100px 0px;
 }
 .projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
