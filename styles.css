@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color:rgb(34, 24, 33);
+    background-color:black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100dvh;
 }
@@ -123,7 +123,7 @@ h1 {
     text-shadow: #28464B -2px 2px;
 }
 .p1 {
-    font-size: 17px;
+    font-size: 27px;
     text-align: left;
     text-shadow: #28464B -2px 2px;
 }
@@ -134,9 +134,12 @@ h1 {
     display: flex;
     flex-direction: row-reverse;
     color: white;
-    width: 100%;
     justify-content: space-around;
-    padding: 110px 0px 100px 0px;
+    padding: 50px 20px 50px 20px;
+    margin: 0px 100px;
+}
+.persText > h2 {
+    text-align: center;
 }
 .persText {
     justify-self: center;
@@ -197,11 +200,14 @@ h1 {
     flex-direction: column;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
     padding: 110px 0px 100px 0px;
 }
 .projects {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 .prs {
@@ -376,4 +382,45 @@ li {
 .butt2:hover {
     background-color: aliceblue;
     color: black;
+}
+
+.skilInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+.skilText {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+}
+.skilText h2 {
+    font-size: 35px;
+    text-align: center;
+}
+.skilText p {
+    font-size: 25px;
+    text-align: center;
+}
+.skilText ul {
+    font-size: 30px;
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    justify-items: center;
+    align-content: center;
+}
+.skilText > ul > li {
+    font-size: 20px;
+    padding: 5px 5px;
+    background: linear-gradient( 90deg, #28464B, #2C8C99, #42D9C8);
+    margin-bottom: 10px;
+    width: 100px;
+    height: auto;
+    text-align: center;
 }
