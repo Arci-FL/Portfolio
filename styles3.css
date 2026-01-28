@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+    .mainP {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name {
+        font-size: 55px;
+    }
+    .main_right {
+        width: 250px;
+        height: 250px;
+    }
+    .img1 {
+        width: 150px;
+        height: 150px;
+        background-color: #931621;
+        object-fit: cover;
+        border-radius: 100%;
+        box-shadow: white -2px 2px;
+    }
+    h1 {
+        text-align: left;
+        font-size: 50px;
+        text-shadow: #28464B -2px 2px;
+    }
+    .p1 {
+        font-size: 27px;
+        text-align: left;
+        text-shadow: #28464B -2px 2px;
+    }
+    .persInfo {
+        padding: 50px 20px 50px 20px;
+        margin: 0px 20px;
+    }
+    .persText > h2 {
+        font-size: 20px;
+    }
+    .skilText{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skilText h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .skilText p {
+        font-size: 20px;
+        margin: 5px 25px;
+        word-wrap: break-word;
+    }
+    .skilText ul {
+        font-size: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skilText > ul > li {
+        font-size: 15px;
+        padding: 5px 5px;
+        background: linear-gradient( 90deg, #28464B, #2C8C99, #42D9C8);
+        margin-bottom: 10px;
+        width: 100px;
+        height: auto;
+        text-align: center;
+    }
+  }

@@ -3,8 +3,7 @@ body {
     background-color:black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100dvh;
-}
-.abody {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -82,9 +81,11 @@ body {
     background-color: black;
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
     color: #42D9C8;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
     padding: 110px 0px 100px 0px;
 }
 .main_left {
@@ -105,7 +106,7 @@ body {
     border: #931621 5px solid;
     box-shadow: white -2px 2px;
     justify-content: center;
-    align-content:center;
+    align-items: center;
     width: 450px;
     height: 450px;
 }
@@ -140,6 +141,10 @@ h1 {
 }
 .persText > h2 {
     text-align: center;
+}
+.persText > p {
+    font-size: 15px;
+    text-align: right;
 }
 .persText {
     justify-self: center;
@@ -182,8 +187,7 @@ h1 {
     color: white;
 }
 .lnk4:hover {
-    text-decoration: underline;
-    color: white;
+    color: #931621;
 }
 .p2 {
     display: flex;
@@ -384,6 +388,9 @@ li {
     color: black;
 }
 
+
+
+
 .skilInfo {
     display: flex;
     flex-direction: column;
@@ -414,6 +421,7 @@ li {
     list-style: none;
     justify-items: center;
     align-content: center;
+    padding: 0px;
 }
 .skilText > ul > li {
     font-size: 20px;
